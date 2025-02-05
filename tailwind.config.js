@@ -4,7 +4,18 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        stackBlue: '#2663EB',
+        aiBlue: '#1F54C7',
+      },
+      spacing: {
+        '121.57': '121.57px',
+        '28': '28px',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 }
