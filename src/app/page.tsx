@@ -29,7 +29,7 @@ export default function Home() {
                         className="bg-stackBlue text-white font-semibold py-3 px-6 sm:px-8 rounded-lg shadow-md
                             hover:bg-aiBlue transition duration-200"
                         text="Get Started"
-                        href="/login"
+                        href="/signup"
                         aria-label="Get started with our issue tracker"
                     />
                 </div>

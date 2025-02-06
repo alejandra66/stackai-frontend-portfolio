@@ -11,7 +11,7 @@ export default function SignupForm() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you can add authentication logic or API calls to register the user.
+        // add authentication logic or API calls to register the user.
         console.log("Signing up with:", { name, email, password, confirmPassword });
     };
 
@@ -21,7 +21,7 @@ export default function SignupForm() {
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                            Sign up for your account
+                            Creat an Account
                         </h1>
                         <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                             {/* Name Field */}
@@ -109,12 +109,11 @@ export default function SignupForm() {
                                 <Button
                                     className="w-44 text-center"
                                     text="Sign Up"
-                                    href="/signup" // In a real scenario, you might not use href here—handle the form submission instead.
-                                    aria-label="Sign up for a new account"
+                                    href="/signup-success"
+                                    aria-label="Create a account"
                                 />
                             </div>
 
-                            {/* Sign In Redirect */}
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Already have an account?{" "}
                                 <a
