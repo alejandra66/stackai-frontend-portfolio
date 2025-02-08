@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
 import React, { useState } from "react";
 import Button from "@/components/Button";
-import Link from "next/link";
 import { useRouter } from 'next/router';
 
 export default function LoginForm() {
@@ -37,7 +36,7 @@ export default function LoginForm() {
 
     return (
         <section className="bg-gray-50 dark:bg-gray-900">
-            <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 relative z-30">
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -70,12 +69,11 @@ export default function LoginForm() {
                                 />
                             </div>
                             <div className="flex justify-center items-center">
-                                <Button className="w-44 text-center" text="Login"  href="/tracker" type="sumbit"/>
+                                <Button className="w-full sm:w-44 text-center" text="Login" href="/tracker" type="submit" />
                             </div>
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Forgot Password?
-                                <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                                >
+                                <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
                                 </a>
                             </p>
                         </form>
@@ -85,3 +83,5 @@ export default function LoginForm() {
         </section>
     );
 }
+
+

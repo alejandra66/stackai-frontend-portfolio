@@ -11,23 +11,23 @@ export default function Nav() {
     const toggleMenu = () => setIsOpen((prev) => !prev);
 
     return (
-        <nav className="text-black p-6" aria-label="Main Navigation">
+        <nav className="p-6" aria-label="Main Navigation">
             <div className="flex justify-between items-center">
                 <a href="/" aria-label="Homepage">
                     <img
                         src="/images/stackLogo.svg"
                         alt="AI-Powered Issue Tracker Logo"
-                        className="w-[121.57px] h-[28px] mr-2"
+                        className="w-[121.57px] h-[28px]"
                     />
                 </a>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex md:items-center space-x-6">
-                    {["Home", "About", "login"].map((label) => (
+                    {["Home", "About", "Login"].map((label) => (
                         <Link
                             key={label}
                             href={label === "Home" ? "/" : `/${label.toLowerCase()}`}
-                            className="hover:underline"
+                            className="hover:underline text-lg"
                             aria-label={`Go to ${label} page`}
                         >
                             {label}
@@ -38,7 +38,7 @@ export default function Nav() {
 
                 {/* Hamburger Icon (Mobile) */}
                 <button
-                    className="md:hidden text-black"
+                    className="md:hidden"
                     onClick={toggleMenu}
                     aria-expanded={isOpen}
                     aria-controls="mobile-menu"
@@ -54,7 +54,7 @@ export default function Nav() {
                 className={`${isOpen ? "block" : "hidden"} md:hidden flex flex-col items-center space-y-4 mt-4 bg-blue-800 p-4 rounded-lg shadow-lg`}
                 role="menu"
             >
-                {["Home", "About", "login"].map((label) => (
+                {["Home", "About", "Login"].map((label) => (
                     <Link
                         key={label}
                         href={label === "Home" ? "/" : `/${label.toLowerCase()}`}
@@ -68,4 +68,5 @@ export default function Nav() {
             </div>
         </nav>
     );
-};
+}
+
