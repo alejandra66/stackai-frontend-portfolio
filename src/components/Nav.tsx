@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = () => {
+export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -69,5 +69,3 @@ const Nav = () => {
         </nav>
     );
 };
-
-export default Nav;

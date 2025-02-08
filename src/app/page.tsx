@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "@/components/Button";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <div role="main" className="flex items-center justify-center min-h-screen px-4 sm:px-8 bg-gray-50">
             <div className="flex flex-col items-center text-center max-w-3xl sm:max-w-4xl w-full">
