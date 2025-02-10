@@ -51,7 +51,7 @@ export default function Nav() {
             {/* Mobile Menu */}
             <div
                 id="mobile-menu"
-                className={`${isOpen ? "block" : "hidden"} md:hidden flex flex-col items-center space-y-4 mt-4 bg-blue-800 p-4 rounded-lg shadow-lg`}
+                className={`${isOpen ? "block" : "hidden"} text-white md:hidden flex flex-col items-center space-y-4 mt-4 bg-gradient-to-r from-stackBlue to-pink-300 p-4 rounded-lg shadow-lg`}
                 role="menu"
             >
                 {["Home", "About", "Login"].map((label) => (
